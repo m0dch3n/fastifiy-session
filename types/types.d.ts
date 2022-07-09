@@ -18,8 +18,6 @@ declare module 'fastify' {
 interface SessionData extends ExpressSessionData {
   sessionId: string;
 
-  encryptedSessionId: string;
-
   /** Updates the `expires` property of the session. */
   touch(): void;
 
